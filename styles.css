@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0 1fr 1fr 1fr;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 15px 0 0;
+    font-size: 13px;
+    position: fixed;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+.nav-text{
+    margin-right: 6px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-text:hover{
+    text-decoration: underline
+}
+
+    /*Agrandar las etiquetas <a>, que queden del mismo tamaño que el hover*/
+.nav-icon{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon:hover{
+    background-color: rgb(210, 210, 210);
+    border-radius: 50%;
+}
+    
+#search-labs{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+#nueve-puntos{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+#email-icon{
+    font-size: 17px;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(0, 170, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#for-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#google-div{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#google-div img{
+    height: 90px;
+    width: 270px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#sb-big-div{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: auto;
+}
+
+#sb-div{
+    width: 750px;
+    height: 48px;
+    margin: 23px 17px 11px 17px;
+    border: solid 1px #fff;
+    border-radius: 30px;
+    box-shadow: rgb(200, 200, 200) 0 0 8px 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    position: relative;
+}
+
+    /*Puede que se pueda ajustar el width*/
+    /*Probar ponerle otra imagen a la lupa*/
+#lupa-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 46px;
+}
+
+#lupa{
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+    margin: 10px 0 10px 10px;
+}
+
+#search-label{
+    height: 46px;
+}
+
+    /*A modificar despues de las imagenes de la derecha*/
+#search-bar{
+    width: 627px;
+    height: 46px;
+    border: white solid 10px;
+    border-radius: 30px;
+    outline: none; /*Propiedad para quitarle el hover del borde al input*/
+    font-size: 15px;
+    margin-left: 45px;
+}
+
+#micro-lens{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+    /*MODIFICAR*/
+.right-items{
+    width: 19px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#micro{
+    width: 28px;
+    height: 28px;
+}
+#lens{
+    width: 21px;
+    height: 21px;
+}
+
+#web-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+#web-bar a:hover{
+    background-color: rgb(230, 230, 230);
+    color: #0a0a0a;
+    border-radius: 4px;
+}
+
+    /*Buscar si hay que eliminar algun selector innecesario*/
+
+.web{
+    height: 110px;
+    width: 110px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo-area{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-circle{
+    height: 48px;
+    width: 48px;
+    margin: 10px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-logo{
+    height: 25px;
+    width: 25px;
+    object-fit: contain; /*Investigar mas a fondo acerca de esta propiedad*/
+    margin: auto 20px auto 20px;
+}
+
+#web-bar p{
+    font-size: 13px;
+    width: 110px;
+    text-align: center;
+}
+
+#plus{
+    height: 20px;
+    width: 20px;
+}
+
+.da-icon{
+    background-color: rgb(200, 225, 255);
+}
+
+footer{
+    margin: 16px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#personalizame{
+    background-color: rgb(200, 225, 255);
+    border-radius: 40px;
+    height: 33px;
+    width: 176px;
+    box-shadow: rgb(200, 200, 200) 0px 2px 2px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#personalizame:hover{
+    background-color: rgb(180, 210, 250);
+}
+
+#lapicito{
+    height: 12px;
+    width: 12px;
+    margin: 10px 0 10px 10px;
+}
+
+#personalizame p{
+    font-size: 12.5px;
+    margin: 10px;
+}
